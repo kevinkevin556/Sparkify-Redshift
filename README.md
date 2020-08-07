@@ -50,9 +50,14 @@ foo@bar:~$ pip3 install requirement.txt
 
 ### Start an Redshift cluster
 
-#### Create an IAM Role for Redshift cluster
+#### Create an IAM Role for Redshift cluster</bold>
 
-First, set up an IAM role to give our redshift cluster the access to the AWS S3 bucket.
+<details>
+<summary>
+<a class="btnfire small stroke"><em class="fas fa-chevron-circle-down"></em>&nbsp;&nbsp;Show details</a>
+</summary>
+
+First, set up an IAM role to give our redshift cluster the access to the AWS S3 bucket.<
 
 1. Sign in to the AWS Management Console and open the IAM console at https://console.aws.amazon.com/iam/.
 2. In the left navigation pane, choose **Roles**.
@@ -64,7 +69,14 @@ First, set up an IAM role to give our redshift cluster the access to the AWS S3 
 8. For **Role name**, enter any name you want, and then choose **Create Role**.
 9. After you have created the IAM role, choose **Role** in the left navigation pane and find it in the list. Double-click the IAM role and you can see the Summary of the role. Find **Role ARN** in the summary and copy the value into `dwh.cfg` file for `ARN` under `IAM_ROLE` section.
 
+</details>
+
 #### Launch an Redshift cluster
+
+<details>
+<summary>
+<a class="btnfire small stroke"><em class="fas fa-chevron-circle-down"></em>&nbsp;&nbsp;Show details</a>
+</summary>
 
 1. Sign in to the AWS Management Console and open the Amazon Redshift console at https://us-west-2.console.aws.amazon.com/redshiftv2.
 2. On the Amazon Redshift Dashboard, choose **Create cluster**.
@@ -83,6 +95,8 @@ First, set up an IAM role to give our redshift cluster the access to the AWS S3 
 
 Now we complete all the necessary setting for Redshift cluster!
 
+</details>
+
 ### Set up the database
 
 Create all tables in our Redshift cluster by running
@@ -97,7 +111,7 @@ Then stage the data and create fact table and diemensional tables.
 foo@bar:~$ python etl.py
 ```
 
-**Note: You can use `-v` or `--verbose` option to print queries as they are executing for the abovementioned scipts.**
+**Note: For `create_table.py` and `etl.py`, You can use `-v` or `--verbose` option to print queries as they are executing.**
 
 ## Usage
 
