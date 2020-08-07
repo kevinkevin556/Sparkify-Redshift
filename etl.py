@@ -42,7 +42,7 @@ def load_staging_tables(cur, conn, verbose):
 def insert_tables(cur, conn, verbose):
     """
     Extract required columns from staging tables and insert data into 
-    dimension tables and fact tables
+    dimension tables and fact tables.
     
     Parameters:
     - cur: cursor of connection to database

@@ -22,7 +22,7 @@ def print_verbose(tag, query):
 
 def drop_tables(cur, conn, verbose):
     """
-    Erase all tables (if exist) in the Redshift cluster
+    Erase all tables (if exist) in the Redshift cluster.
     
     Parameters:
     - cur: cursor of connection to database
@@ -42,7 +42,7 @@ def drop_tables(cur, conn, verbose):
 
 def create_tables(cur, conn, verbose):
     """
-    Create staging, dimension and fact tables in the Redshift cluster
+    Create staging, dimension and fact tables in the Redshift cluster.
     
     Parameters:
     - cur: cursor of connection to database
