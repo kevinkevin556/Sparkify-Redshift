@@ -57,7 +57,7 @@ foo@bar:~$ pip3 install requirement.txt
 <a class="btnfire small stroke"><em class="fas fa-chevron-circle-down"></em>&nbsp;&nbsp;Show details</a>
 </summary>
 
-First, set up an IAM role to give our redshift cluster the access to the AWS S3 bucket.<
+First, set up an IAM role to give our redshift cluster the access to the AWS S3 bucket.
 
 1. Sign in to the AWS Management Console and open the IAM console at https://console.aws.amazon.com/iam/.
 2. In the left navigation pane, choose **Roles**.
